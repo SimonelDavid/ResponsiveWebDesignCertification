@@ -18,12 +18,16 @@
     border-style: solid;
     border-radius: 50%;
   }
-
+ 
   .smaller-image {
     width: 100px;
   }
 
   .silver-background{
     background-color: silver;
+  }
+
+  [type="checkbox"]{
+    margin: 10px 0px 15px 0px;
   }
 </style>
