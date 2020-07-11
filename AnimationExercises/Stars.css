@@ -9,39 +9,25 @@
 .star-1 {
   margin-top: 15%;
   margin-left: 60%;
-  animation-name: twinkle-1;
   animation-duration: 1s;
+  animation-name: twinkle;
 }
 
 .star-2 {
   margin-top: 25%;
   margin-left: 25%;
-  animation-name: twinkle-2;
   animation-duration: 1s;
+  animation-name: twinkle;
 }
 
 .star-3 {
-  margin-top: -40%;
-  margin-left: 10%;
-  animation-name: twinkle-3;
+  margin-top: 10%;
+  margin-left: 50%;
   animation-duration: 1s;
+  animation-name: twinkle;
 }
 
-@keyframes twinkle-1 {
-  50% {
-    transform: scale(0.5);
-    opacity: 0.5;
-  }
-}
-
-@keyframes twinkle-2 {
-  20% {
-    transform: scale(0.5);
-    opacity: 0.5;
-  }
-}
-
-@keyframes twinkle-3 {
+@keyframes twinkle {
   20% {
     transform: scale(0.5);
     opacity: 0.5;
