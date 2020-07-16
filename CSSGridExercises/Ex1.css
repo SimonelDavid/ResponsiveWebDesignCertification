@@ -2,20 +2,21 @@
 
 .d2{
   background:LightSalmon;
-  justify-self: center;
+  /*justify-self: center;*/
 }
 
 .d3{
   background:PaleTurquoise;
-  align-self: end;
+  /*align-self: end;*/
 }
 
 .d4{background:LightPink;}
 
 .d5{
   background:PaleGreen;
-  grid-row: 2/4;
+  /*grid-row: 2/4;
   grid-column: 2/4;
+  */
 }
 
 .container {
@@ -24,10 +25,11 @@
   width: 100%;
   background: LightGray;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 10px;
-  justify-items: center;
+  /*justify-items: center;
   align-items: end;
+  */
 }
