@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey_form.css">
+    <title></title>
+  </head>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <header></header>
+    <header id="fixed"></header>
+    <main id="main">
+      <div class="content">
+        <h1 id="title">Football Survey</h1>
+        <p id="description"> This is a survey which help us to improve our football fan site.</p>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name:</label> 
+            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name here" required><br><br>
+          </div>
+
+          <div class="form-group">
+            <label id="email-label" for="email"> Email: </label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your valid email" required> <br></br>
+          </div>
+
+          <div class="form-group">
+            <label id="number-label" for="number">Age(optional): </label>
+            <input type="number" id="number" name="age" class="form-control" min="7" max="150" placeholder="Enter your age"><br><br>
+          </div>
+
+          <div class="form-group">
+            <label for="fteam">Favorite Team: </label>
+            <input type="text" id="fteam" name="fteam" class="form-control" placeholder="Enter your favorite team" required><br><br>
+          </div>
+  
+          <div class="form-group">
+            <label for="fteam">Favorite National Team: </label>
+            <input type="text" id="fteam" name="fteam" class="form-control" placeholder="Enter your favorite national team" required><br><br>
+          </div>
+          
+          <div class="form-group">
+            <p class="form-text"> Which is your favorite formation?</p>
+            <select name="formation" id="dropdown" class="form-control" required>
+              <option disabled selected value> Select your favorite formation</option>
+              <option value="0"> 3-4-3 </option>
+              <option value="1"> 4-3-3 </option>
+              <option value="2"> 4-4-2 </option>
+              <option value="3"> 4-4-1-1 </option>
+              <option value="4"> 4-3-2-1 </option>
+              <option value="5"> 5-3-2 </option>
+              <option value="6"> 5-3-2 </option>
+              <option value="7"> Other </option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p class="form-text">Would you prefer to</p>
+            <label>
+              <input type="radio" name="preferance" value="player" class="input-radio" checked> play as a profesional football player
+            </label> <br></br>
+            <label>
+              <input type="radio" name="preferance" value="manager" class="input-radio"> play as a profesional football manager
+            </label>
+          </div>
+
+          <div class="form-group">
+            <p class="form-text">Which one of the continents do you like?(in terms of players and internal competitions)</p>
+            <label>
+              <input name="continent" value="africa" type="checkbox" class="input-checkbox"> Africa
+            </label><br></br>
+            <label>
+              <input name="continent" value="asia" type="checkbox" class="input-checkbox"> Asia
+            </label><br></br>
+            <label>
+              <input name="continent" value="australia" type="checkbox" class="input-checkbox"> Australia
+            </label><br></br>
+            <label>
+              <input name="continent" value="europe" type="checkbox" class="input-checkbox"> Europe
+            </label><br></br>
+            <label>
+              <input name="continent" value="Southern-America" type="checkbox" class="input-checkbox"> Southern America
+            </label><br></br>
+            <label>
+              <input name="continent" value="Northern-America" type="checkbox" class="input-checkbox"> Northern America
+            </label><br></br>
+          </div>
+
+          <div class="form-group">
+            <p class="form-text">What do you like to see in this form?</p>
+            <textarea name="comment" id="comments" placeholder="Enter your sugestion here..." class="input-textarea"></textarea>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button"> Submit </button>
+          </div>
+        </form>
+         
+      </div>
+    </main>
+  </body>
+</html>
